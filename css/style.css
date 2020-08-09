@@ -1,0 +1,60 @@
+* {
+	font-family: 'Lato', sans-serif
+}
+#board {
+	position: relative;
+	width: 585px;
+	height: 550px;
+	margin: auto;
+	background: url("../img/board.jpg") no-repeat;
+}
+#messageArea{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	color: #c2c2d6;
+}
+
+form {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 10px;
+	border-radius: 0 0 0 8px;
+	background-color: #669;
+}
+form input {
+	font-size: 1em;
+}
+form input[type=text] {
+	background-color: #c2c2d6;
+	border: 1px solid #c2c2d6;
+}
+form input:hover,
+form input:focus,
+form input:active {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.32), 0 2px 4px rgba(0, 0, 0, 0.44);
+}
+
+#guessInput {
+	width: 40px;
+}
+
+table {
+	position: absolute;
+	left: 113px;
+	top: 98px;
+	border-spacing: 0px;
+}
+td {
+	width: 37px;
+	height: 37px;
+}
+
+.hit {
+	background: url("../img/ship.png") no-repeat center center;
+	background-size: 32px;
+}
+.miss {
+	background: url("../img/miss.png") no-repeat center center;
+	background-size: 32px;
