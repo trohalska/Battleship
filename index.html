@@ -7,18 +7,29 @@
   <meta name="author" content="Tetiana Rohalska">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>Battleship</title>
-	<link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon"/>
-  <link rel="icon" href="img/favicon.ico" type="img/x-icon"/>
+	<link rel="shortcut icon" href="img/favicon.png" type="img/x-icon"/>
+  <link rel="icon" href="img/favicon.png" type="img/x-icon"/>
   <link
     href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
     rel="stylesheet"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<h1>Battleship</h1>
 	<div id="board">
-		<div id="messageArea"></div>
+
+		<div class="panel">
+			<div id="messageArea"></div>
+			<form class="active">
+				<input type="text" id="input" placeholder="A1">
+				<input type="button" id="button" value="Fire!">
+				<input type="button" id="reset" value="Reset">
+			</form>
+		</div>
+
 		<table>
 			<tr>
+				<td id="00"></td>
 				<td id="01"></td>
 				<td id="02"></td>
 				<td id="03"></td>
@@ -28,9 +39,9 @@
 				<td id="07"></td>
 				<td id="08"></td>
 				<td id="09"></td>
-				<td id="10"></td>
 			</tr>
 			<tr>
+				<td id="10"></td>
 				<td id="11"></td>
 				<td id="12"></td>
 				<td id="13"></td>
@@ -40,9 +51,9 @@
 				<td id="17"></td>
 				<td id="18"></td>
 				<td id="19"></td>
-				<td id="20"></td>
 			</tr>
 			<tr>
+				<td id="20"></td>
 				<td id="21"></td>
 				<td id="22"></td>
 				<td id="23"></td>
@@ -52,9 +63,9 @@
 				<td id="27"></td>
 				<td id="28"></td>
 				<td id="29"></td>
-				<td id="30"></td>
 			</tr>
 			<tr>
+				<td id="30"></td>
 				<td id="31"></td>
 				<td id="32"></td>
 				<td id="33"></td>
@@ -64,9 +75,9 @@
 				<td id="37"></td>
 				<td id="38"></td>
 				<td id="39"></td>
-				<td id="40"></td>
 			</tr>
 			<tr>
+				<td id="40"></td>
 				<td id="41"></td>
 				<td id="42"></td>
 				<td id="43"></td>
@@ -76,9 +87,9 @@
 				<td id="47"></td>
 				<td id="48"></td>
 				<td id="49"></td>
-				<td id="50"></td>
 			</tr>
 			<tr>
+				<td id="50"></td>
 				<td id="51"></td>
 				<td id="52"></td>
 				<td id="53"></td>
@@ -88,9 +99,9 @@
 				<td id="57"></td>
 				<td id="58"></td>
 				<td id="59"></td>
-				<td id="60"></td>
 			</tr>
 			<tr>
+				<td id="60"></td>
 				<td id="61"></td>
 				<td id="62"></td>
 				<td id="63"></td>
@@ -100,9 +111,9 @@
 				<td id="67"></td>
 				<td id="68"></td>
 				<td id="69"></td>
-				<td id="70"></td>
 			</tr>
 			<tr>
+				<td id="70"></td>
 				<td id="71"></td>
 				<td id="72"></td>
 				<td id="73"></td>
@@ -112,9 +123,9 @@
 				<td id="77"></td>
 				<td id="78"></td>
 				<td id="79"></td>
-				<td id="80"></td>
 			</tr>
 			<tr>
+				<td id="80"></td>
 				<td id="81"></td>
 				<td id="82"></td>
 				<td id="83"></td>
@@ -124,9 +135,9 @@
 				<td id="87"></td>
 				<td id="88"></td>
 				<td id="89"></td>
-				<td id="90"></td>
 			</tr>
 			<tr>
+				<td id="90"></td>
 				<td id="91"></td>
 				<td id="92"></td>
 				<td id="93"></td>
@@ -136,13 +147,8 @@
 				<td id="97"></td>
 				<td id="98"></td>
 				<td id="99"></td>
-				<td id="100"></td>
 			</tr>
 		</table>
-		<form>
-			<input type="text" id="guessInput" placeholder="A1">
-			<input type="button" id="fireButton" value="Fire!">
-		</form>
 	</div>
 
 	<script src="js/script.js"></script>

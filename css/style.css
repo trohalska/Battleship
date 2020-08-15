@@ -1,45 +1,55 @@
 * {
-	font-family: 'Lato', sans-serif
+	font-family: 'Lato', sans-serif;
+	text-align: center;
 }
 #board {
 	position: relative;
-	width: 585px;
+	width: 575px;
 	height: 550px;
-	margin: auto;
+	margin: 0 auto;
+	padding: 5px;
 	background: url("../img/board.jpg") no-repeat;
 }
-#messageArea{
-	position: absolute;
-	top: 0px;
-	left: 10px;
-	color: #c2c2d6;
+.panel {
+	display: flex;
+	justify-content: space-between;
+	background: #a0d2eb;
+	border-radius: 8px;
 }
 
-form {
+h1::after {
 	position: absolute;
-	top: 0px;
-	right: 0px;
-	padding: 10px;
-	border-radius: 0 0 0 8px;
-	background-color: #669;
+	content: ' ';
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	background: url(../img/favicon.png);
+	background-size: 40px;
+
 }
-form input {
-	font-size: 1em;
+#messageArea,
+form {
+	padding: 10px;
 }
 form input[type=text] {
-	background-color: #c2c2d6;
-	border: 1px solid #c2c2d6;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 2px;
+	padding-left: 5px;
 }
-form input:hover,
-form input:focus,
-form input:active {
+input:hover,
+input:focus,
+input:active {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.32), 0 2px 4px rgba(0, 0, 0, 0.44);
+	outline: none;
 }
 
-#guessInput {
+#input {
 	width: 40px;
 }
-
+#reset {
+	margin-left: 10px;
+}
 table {
 	position: absolute;
 	left: 113px;
@@ -58,3 +68,8 @@ td {
 .miss {
 	background: url("../img/miss.png") no-repeat center center;
 	background-size: 32px;
+}
+.hitted-ship td::before {
+	background: red;
+	width: 30px;
+}
